@@ -10,54 +10,63 @@ public class planet {
 	public static final int OPTION_FIVE = 5;
 	public static final int OPTION_SIX = 6;
 	
-	public double action, planetWeight , planetDistance,memory1=0,memory2=0,memory3=0,memory4=0;
+	public double action, planetWeight , planetDistance,planetMemory1=0,planetMemory2=0,planetMemory3=0,planetMemory4=0;
 	Scanner scan=new Scanner(System.in);
 	public void planetSave(){
 		
 	}
 	
-	public void cratePlanet(){
+	public void getmemory(double x){
+		
+		planetMemory1=x;
+	}
+	
+	public void cratePlanet(double planetMemory1,double planetMemory2,double planetMemory3,double planetMemory4){
+		this.planetMemory1=planetMemory1;
+		this.planetMemory2=planetMemory2;
+		this.planetMemory3=planetMemory3;
+		this.planetMemory4=planetMemory4;
 		
 		System.out.println("CREATE YOURE PLANET:");
 		System.out.println("Select a number from memory, It would be the weight of your planet in Megaton");
-		if(memory1 != 0 )
-			System.out.println("Press 1 to use Memory 1 - "+memory1);
-		if(memory2 != 0 )
-			System.out.println("Press 2 to use Memory 2 - "+memory2);
-		if(memory3 != 0 )
-			System.out.println("Press 3 to use Memory 3 - "+memory3);
-		if(memory4 != 0 )
-			System.out.println("Press 4 to use Memory 4 - "+memory4);
+		if(planetMemory1 != 0 )
+			System.out.println("Press 1 to use Memory 1 - "+planetMemory1);
+		if(planetMemory2 != 0 )
+			System.out.println("Press 2 to use Memory 2 - "+planetMemory2);
+		if(planetMemory3 != 0 )
+			System.out.println("Press 3 to use Memory 3 - "+planetMemory3);
+		if(planetMemory4 != 0 )
+			System.out.println("Press 4 to use Memory 4 - "+planetMemory4);
 		action=scan.nextInt();
 		
 		if(action==OPTION_ONE)
-			planetWeight=memory1;
+			planetWeight=planetMemory1;
 		if(action==OPTION_TWO)
-			planetWeight=memory2;
+			planetWeight=planetMemory2;
 		if(action==OPTION_TREE)
-			planetWeight=memory3;
+			planetWeight=planetMemory3;
 		if(action==OPTION_FOR)
-			planetWeight=memory4;
+			planetWeight=planetMemory4;
 		
 		System.out.println("Select one more number from memory, It would be the distance of your planet from the sun in Kilometers");
-		if(memory1 != 0 )
-			System.out.println("Press 1 [Memory 1] - "+memory1);
-		if(memory2 != 0 )
-			System.out.println("Press 2 [Memory 2] - "+memory2);
-		if(memory3 != 0 )
-			System.out.println("Press 3 [Memory 3] - "+memory3);
-		if(memory4 != 0 )
-			System.out.println("Press 4 [Memory 4] - "+memory4);
-		planetDistance=scan.nextInt();
+		if(planetMemory1 != 0 )
+			System.out.println("Press 1 [Memory 1] - "+planetMemory1);
+		if(planetMemory2 != 0 )
+			System.out.println("Press 2 [Memory 2] - "+planetMemory2);
+		if(planetMemory3 != 0 )
+			System.out.println("Press 3 [Memory 3] - "+planetMemory3);
+		if(planetMemory4 != 0 )
+			System.out.println("Press 4 [Memory 4] - "+planetMemory4);
+		action=scan.nextInt();
 		
 		if(action==OPTION_ONE)
-			planetDistance=memory1;
+			planetDistance=planetMemory1;
 		if(action==OPTION_TWO)
-			planetDistance=memory2;
+			planetDistance=planetMemory2;
 		if(action==OPTION_TREE)
-			planetDistance=memory3;
+			planetDistance=planetMemory3;
 		if(action==OPTION_FOR)
-			planetDistance=memory4;
+			planetDistance=planetMemory4;
 		
 		System.out.println("your planet weight "+planetWeight+": Megaton");
 		System.out.println("your planet distance from the sun "+planetDistance+" Kilometers");

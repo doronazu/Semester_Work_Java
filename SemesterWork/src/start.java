@@ -14,7 +14,7 @@ public class start {
 	public static void main(String[] args) {
 		
 		int i=1;
-		double numberSaves=0,firstNumber , secondNum,action,rezult=0,memory1=0,memory2=0,memory3=0,memory4=0;
+		double numberSaves=0,firstNumber , secondNum,action,rezult=0,memory1=0,memory2=0,memory3=0,memory4=0,planetMemory1,planetMemory2,planetMemory3,planetMemory4;
 		
 		Scanner scan=new Scanner(System.in);
 		calculator c = new calculator();
@@ -46,43 +46,17 @@ public class start {
 		
 		
 		if(action==OPTION_SIX){
-		
+			planetMemory1=c.getMemory1();
+			planetMemory2=c.getMemory2();
+			planetMemory3=c.getMemory3();
+			planetMemory4=c.getMemory4();
+			p.cratePlanet(planetMemory1, planetMemory2, planetMemory3, planetMemory4);
+			
+			
 		}
-	
 		
-		
-//		action=scan.nextInt();
-//		
-//		if(action==OPTION_QUIT){
-//			System.out.println("Your Rezult Don't save.");
-//		}
-//		
-//		if(action==OPTION_ONE){
-//			memory1=rezult;
-//			numberSaves++;
-//			System.out.println("Your Rezult saved in Memory 1.");
-//		}
-//			
-//		if(action==OPTION_TWO){
-//			memory2=rezult;
-//			numberSaves++;
-//			System.out.println("Your Rezult saved in Memory 2.");
-//		}
-//			
-//		if(action==OPTION_TREE){
-//			memory3=rezult;
-//			numberSaves++;
-//			System.out.println("Your Rezult saved in Memory 3.");
-//		}
-//			
-//		if(action==OPTION_FOR){
-//			memory4=rezult;
-//			numberSaves++;
-//			System.out.println("Your Rezult saved in Memory 4.");
-//		}
-		
-		
-		}
+	}
+
 	}
 	
 }

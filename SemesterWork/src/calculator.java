@@ -14,6 +14,26 @@ public class calculator {
 	
 	Scanner scan=new Scanner(System.in);
 	
+	public double getMemory1(){
+		
+		return 	memory1;
+		}
+	
+	public double getMemory2(){
+		
+		return 	memory2;
+		}
+	
+	public double getMemory3(){
+		
+		return 	memory3;
+		}
+	
+	public double getMemory4(){
+		
+		return 	memory4;
+		}
+		
 	public void calculatorPrintAction(){
 		System.out.println("\n------------------------------");
 		System.out.println("PLEASE CHOOSE ACTION:");
@@ -35,7 +55,7 @@ public class calculator {
 	}
 	
 	public double calculatorSave(double mathRezult){
-		this.rezult=mathRezult;
+		rezult=mathRezult;
 		calculatorPrintSave();
 		action=scan.nextInt();
 		
@@ -129,7 +149,7 @@ public class calculator {
 		
 		System.out.println("= "+sum);
 		
-		rezult=calculatorSave(rezult);
+		rezult=calculatorSave(sum);
 		return sum;
 	}
 	
@@ -152,9 +172,12 @@ public class calculator {
 		else
 			System.out.println(firstNumber+" is Not Prime number!");
 		
-		rezult=calculatorSave(rezult);
+		rezult=calculatorSave(firstNumber);
 		
 		return rezult;
 	}
+	
+	
+	
 	
 }
