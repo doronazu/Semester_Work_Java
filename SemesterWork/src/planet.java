@@ -2,6 +2,20 @@ import java.util.Scanner;
 
 public class planet {
 	
+	//////////////////////////////////////////////////
+	//												//
+	//	This class create objects,					//
+	//	the class contains functions				//	
+	//	Some did not return a value, and some do	//
+	//												//
+	//////////////////////////////////////////////////
+	
+	//////////////////////////////////////////////////////	
+	//													//
+	//		Defines SIX magic numbers for the options	//								
+	//													//
+	//////////////////////////////////////////////////////
+	
 	public static final int OPTION_QUIT = 0;
 	public static final int OPTION_ONE = 1;
 	public static final int OPTION_TWO = 2;
@@ -10,6 +24,31 @@ public class planet {
 	public static final int OPTION_FIVE = 5;
 	public static final int OPTION_SIX = 6;
 	
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//																											//
+//							Variabels list																	//
+//																											//
+//	action = action = the option the user chose to do in the class planet									//
+//	planetWeight = the weight of the planet																	//
+//	planetDistance = the distance of the planet from the sun												//
+//	planetMemory1 = this var gets the result from calculator trow the main to here							//
+//	planetMemory2 = this var gets the result from calculator trow the main to here							//
+//	planetMemory3 = this var gets the result from calculator trow the main to here							//
+//	planetMemory4 = this var gets the result from calculator trow the main to here							//
+//	planetSpace1w = this var get value from "var planetMemory" and he save the planet weight				//
+//	planetSpace1d = this var get value from "var planetMemory" and he save the planet distance				//
+//	planetSpace2w = this var get value from "var planetMemory" and he save the planet weight				//
+//	planetSpace2d = this var get value from "var planetMemory" and he save the planet distance				//
+//	planetSpace3w = this var get value from "var planetMemory" and he save the planet weight				//
+//	planetSpace3d = this var get value from "var planetMemory" and he save the planet distance				//
+//	planetSpace4w = this var get value from "var planetMemory" and he save the planet weight				//
+//	planetSpace4d = this var get value from "var planetMemory" and he save the planet distance				//
+//	planetName1 = this var get from the user the name of is planet											//
+//	planetName2 = this var get from the user the name of is planet											//
+//	planetName3 = this var get from the user the name of is planet											//
+//	planetName4 = this var get from the user the name of is planet											//
+//																											//
+///////////////////////////////////////////////////////////////////////////////////////////////////////////	
 	public double action, planetWeight , planetDistance,planetMemory1=0,planetMemory2=0,planetMemory3=0,planetMemory4=0;
 	public double planetSpace1w=0,planetSpace1d=0,planetSpace2w=0,planetSpace2d=0,planetSpace3w=0,planetSpace3d=0,planetSpace4w=0,planetSpace4d=0,planetSaves=0;
 	String planetName1,planetName2,planetName3,planetName4;

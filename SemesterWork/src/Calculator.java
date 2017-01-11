@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
 public class Calculator {
+	
 	//////////////////////////////////////////////////////////////////////////////////
 	//																				//
     //   This class contains calculator functions to perform arithmetic operations	//
@@ -13,7 +14,11 @@ public class Calculator {
 	//																				//
 	//////////////////////////////////////////////////////////////////////////////////
 	
-	/*Defines SIX magic numbers for the options*/									
+	//////////////////////////////////////////////////////	
+	//													//
+	//		Defines SIX magic numbers for the options	//								
+	//													//
+	//////////////////////////////////////////////////////
 	
 	public static final int OPTION_QUIT = 0;
 	public static final int OPTION_ONE = 1;
