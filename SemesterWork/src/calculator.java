@@ -6,7 +6,7 @@ public class calculator {
 	public static final int OPTION_ONE = 1;
 	public static final int OPTION_TWO = 2;
 	public static final int OPTION_TREE = 3;
-	public static final int OPTION_FOR = 4;
+	public static final int OPTION_FOUR = 4;
 	public static final int OPTION_FIVE = 5;
 	public static final int OPTION_SIX = 6;
 	
@@ -42,6 +42,8 @@ public class calculator {
 		System.out.println("Press 3 - [*] Multiplication");
 		System.out.println("Press 4 - [^] Power");
 		System.out.println("Press 5 - find if prime");
+		
+
 	}
 	
 	public void calculatorPrintSave(){
@@ -81,7 +83,7 @@ public class calculator {
 			System.out.println("Your Rezult saved in Memory 3.");
 		}
 			
-		if(action==OPTION_FOR){
+		if(action==OPTION_FOUR){
 			memory4=rezult;
 			numberSaves++;
 			System.out.println("Your Rezult saved in Memory 4.");
