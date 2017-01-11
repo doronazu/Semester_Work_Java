@@ -21,8 +21,8 @@ public class start {
 		double planetMemory1,planetMemory2,planetMemory3,planetMemory4;
 		
 		Scanner scan=new Scanner(System.in);
-		calculator c = new calculator();
-		planet p = new planet();
+		Calculator c = new Calculator();
+		Planet p = new Planet();
 		
 	while(action > 0){
 		

@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class calculator {
+public class Calculator {
 	
 	public static final int OPTION_QUIT = 0;
 	public static final int OPTION_ONE = 1;
