@@ -10,7 +10,7 @@ public class calculator {
 	public static final int OPTION_FIVE = 5;
 	public static final int OPTION_SIX = 6;
 	
-	public double numberSaves=0,action,firstNumber , secondNum,sum,rezult,memory1=0,memory2=0,memory3=0,memory4=0;
+	public double numberSaves=0,action,firstNumber , secondNum,sum,result,memory1=0,memory2=0,memory3=0,memory4=0;
 	
 	Scanner scan=new Scanner(System.in);
 	
@@ -56,37 +56,37 @@ public class calculator {
 		System.out.println("Press 4 - Save in memory 4");
 	}
 	
-	public double calculatorSave(double mathRezult){
-		rezult=mathRezult;
+	public double calculatorSave(double mathResult){
+		result=mathResult;
 		calculatorPrintSave();
 		action=scan.nextInt();
 		
 		if(action==OPTION_QUIT){
-			System.out.println("Your Rezult Don't save.");
+			System.out.println("Your Result Don't save.");
 		}
 		
 		if(action==OPTION_ONE){
-			memory1=rezult;
+			memory1=result;
 			numberSaves++;
-			System.out.println("Your Rezult saved in Memory 1.");
+			System.out.println("Your Result saved in Memory 1.");
 		}
 			
 		if(action==OPTION_TWO){
-			memory2=rezult;
+			memory2=result;
 			numberSaves++;
-			System.out.println("Your Rezult saved in Memory 2.");
+			System.out.println("Your Result saved in Memory 2.");
 		}
 			
 		if(action==OPTION_TREE){
-			memory3=rezult;
+			memory3=result;
 			numberSaves++;
-			System.out.println("Your Rezult saved in Memory 3.");
+			System.out.println("Your Result saved in Memory 3.");
 		}
 			
 		if(action==OPTION_FOUR){
-			memory4=rezult;
+			memory4=result;
 			numberSaves++;
-			System.out.println("Your Rezult saved in Memory 4.");
+			System.out.println("Your Result saved in Memory 4.");
 		}
 		return numberSaves;
 	}
@@ -99,11 +99,11 @@ public class calculator {
 		System.out.println("+");
 		secondNum=scan.nextInt();
 		
-		rezult=firstNumber+secondNum;
-		System.out.println("= "+rezult);
+		result=firstNumber+secondNum;
+		System.out.println("= "+result);
 		
-		rezult=calculatorSave(rezult);
-		return rezult;
+		result=calculatorSave(result);
+		return result;
 		
 	}
 	
@@ -115,11 +115,11 @@ public class calculator {
 		System.out.println("-");
 		secondNum=scan.nextInt();
 		
-		rezult=firstNumber-secondNum;
-		System.out.println("= "+rezult);
+		result=firstNumber-secondNum;
+		System.out.println("= "+result);
 		
-		rezult=calculatorSave(rezult);
-		return rezult;
+		result=calculatorSave(result);
+		return result;
 	}
 	
 	public double Multiplication(){
@@ -130,11 +130,11 @@ public class calculator {
 		System.out.println("*");
 		secondNum=scan.nextInt();
 
-		rezult=firstNumber*secondNum;
-		System.out.println("= "+rezult);
+		result=firstNumber*secondNum;
+		System.out.println("= "+result);
 		
-		rezult=calculatorSave(rezult);
-		return rezult;
+		result=calculatorSave(result);
+		return result;
 	}
 	public double power(){
 		
@@ -151,7 +151,7 @@ public class calculator {
 		
 		System.out.println("= "+sum);
 		
-		rezult=calculatorSave(sum);
+		result=calculatorSave(sum);
 		return sum;
 	}
 	
@@ -174,9 +174,9 @@ public class calculator {
 		else
 			System.out.println(firstNumber+" is Not Prime number!");
 		
-		rezult=calculatorSave(firstNumber);
+		result=calculatorSave(firstNumber);
 		
-		return rezult;
+		return result;
 	}
 	
 	

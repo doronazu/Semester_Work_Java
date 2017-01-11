@@ -13,6 +13,8 @@ public class planet {
 	public double action, planetWeight , planetDistance,planetMemory1=0,planetMemory2=0,planetMemory3=0,planetMemory4=0;
 	public double planetSpace1w=0,planetSpace1d=0,planetSpace2w=0,planetSpace2d=0,planetSpace3w=0,planetSpace3d=0,planetSpace4w=0,planetSpace4d=0,planetSaves=0;
 	String planetName1,planetName2,planetName3,planetName4;
+	
+	
 	Scanner scan=new Scanner(System.in);
 	
 	
@@ -83,7 +85,7 @@ public class planet {
 		System.out.println("Press 4 - Save [Space 4]");
     	action=scan.nextInt();
     	
-    	System.out.println("What is the name of your star? \n       Use [A-Z] [a-z]");
+    	System.out.println("What is the name of your star? \n      Use [A-Z] [a-z]");
     	
     	if(action==OPTION_QUIT){
 			System.out.println("Your Rezult Don't save.");
