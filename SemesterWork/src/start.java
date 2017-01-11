@@ -15,9 +15,10 @@ public class start {
 	
 	public static void main(String[] args) {
 		
-		int i=1;
-		double planetSaves=0,numberSaves=0,firstNumber , secondNum,action=1,rezult=0;
-		double memory1=0,memory2=0,memory3=0,memory4=0,planetMemory1,planetMemory2,planetMemory3,planetMemory4;
+		
+		double planetSaves=0,numberSaves=0,action=1;
+		double memory1=0,memory2=0,memory3=0,memory4=0;
+		double planetMemory1,planetMemory2,planetMemory3,planetMemory4;
 		
 		Scanner scan=new Scanner(System.in);
 		calculator c = new calculator();
