@@ -59,7 +59,7 @@ public class start {
 		}
 		
 		if(action==OPTION_SEVEN)
-			p.theGalaxsy();
+			action=p.theGalaxsy();
 			
 		
 	}

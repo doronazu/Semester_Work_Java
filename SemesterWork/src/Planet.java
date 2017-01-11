@@ -127,7 +127,7 @@ public class Planet {
 		return planetSaves++;
     }
     
-    public void theGalaxsy(){
+    public double theGalaxsy(){
     	
     	System.out.println("\n\n\t WELCOME TO YOUR GALAXSY:\n");
     	
@@ -149,10 +149,11 @@ public class Planet {
     	}
     	
     	System.out.println("\n _____________________");
-    	System.out.println("| EXIT      - Press 0 |");
-    	System.out.println("| CONTINUE  - Prass 1 |");
+    	System.out.println("| CONTINUE  - Press 1 |");
+    	System.out.println("| EXIT      - Prass 0 |");
     	System.out.println("|_____________________|");
     	action=scan.nextInt();
+    	return action;
     }
 
 }
