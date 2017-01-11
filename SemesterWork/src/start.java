@@ -2,12 +2,15 @@ import java.util.Scanner;
 
 public class start {
 	
-	/*This program contains accounts department and the department to create objects
-	The user is asked to do arithmetic, the user can save the result only after the two results will be saved, 
-	the program will display an option to create a planet by the results saved from previous sessions calculator, 
-	the user can save the planet and give it a name, then the program will be able to see planets stored,
-	The program ends when the person selects Exit*/
-	
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////	
+//																															//
+//	This program contains accounts department and the department to create objects											//
+//	The user is asked to do arithmetic, the user can save the result only after the two results will be saved, 				//
+//	the program will display an option to create a planet by the results saved from previous sessions calculator, 			//
+//	the user can save the planet and give it a name, then the program will be able to see planets stored,					//
+//	The program ends when the person selects Exit																			//
+//																															//
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////	
 	/*Defines seven magic numbers for the options*/
 	
 	
@@ -23,38 +26,49 @@ public class start {
 	
 	public static void main(String[] args) {
 		
-		
-		/*List of variables
-		  
-		 
-	    action = the option the user chose to do in the calculator
-	planetSaves = the number of planet the user save
-	numberSaves = the number of results from the calculator the user save
-	planetMemory1 = gets the results from the calculator if the user save a result
-	planetMemory2 = gets the results from the calculator if the user save a result
-	planetMemory3 = gets the results from the calculator if the user save a result
-	planetMemory4 = gets the results from the calculator if the user save a result
-	*/
-		
+//////////////////////////////////////////////////////////////////////////////////////////
+//																						//
+//								List of variables										//
+//		  																				//
+//		 																				//
+//	    action = the option the user chose to do in the calculator						//
+//	planetSaves = the number of planet the user save									//
+//	numberSaves = the number of results from the calculator the user save				//
+//	planetMemory1 = gets the results from the calculator if the user save a result		//
+//	planetMemory2 = gets the results from the calculator if the user save a result		//
+//	planetMemory3 = gets the results from the calculator if the user save a result		//
+//	planetMemory4 = gets the results from the calculator if the user save a result		//
+//																						//
+//////////////////////////////////////////////////////////////////////////////////////////		
 		
 		
 		double planetSaves=0,numberSaves=0,action=1;
 		double planetMemory1,planetMemory2,planetMemory3,planetMemory4;
 		
+	//////////////////////////	
+	//						//
+	//	 Departments		//
+	//						//
+	//////////////////////////	
 		
-		
-		/*Departments*/
-
 		Scanner scan=new Scanner(System.in);
 		Calculator c = new Calculator();
 		planet p = new planet();
 		
-		
-		/*Stop loop software the user chooses to stop working at 0*/ 
+	//////////////////////////////////////////////////////////////////////	
+	//																	//
+	//	   Stop loop software the user chooses to stop working at 0 	//
+	//																	//
+	//////////////////////////////////////////////////////////////////////
 		
 	while(action > 0){
 		
-		/*Printing function calculator*/
+	//////////////////////////////////////
+	//									//
+	//									//
+	//	Printing function calculator	//
+	//									//
+	//////////////////////////////////////
 		
 		c.calculatorPrintAction();
 		if(numberSaves>=2)
@@ -64,10 +78,15 @@ public class start {
 		System.out.println("Press 0 - TO EXIT");
 		
 		action=scan.nextInt();
-		
-		/*Chack the option and start to use function calculator */
-		
-		/*and start function for the calculator math*/
+
+	//////////////////////////////////////////////////////////////////////////
+	//																		//
+	//																		//
+	//	Chack the option and start to use function calculator 				//
+	//																		//
+	//	and start function for the calculator math							//
+	//																		//
+	//////////////////////////////////////////////////////////////////////////
 		
 		if(action==OPTION_ONE)
 			numberSaves=c.Addition();
