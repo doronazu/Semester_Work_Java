@@ -2,6 +2,8 @@ import java.util.Scanner;
 
 public class Calculator {
 	
+	/*Defines SIX magic numbers for the options*/
+	
 	public static final int OPTION_QUIT = 0;
 	public static final int OPTION_ONE = 1;
 	public static final int OPTION_TWO = 2;
@@ -10,9 +12,28 @@ public class Calculator {
 	public static final int OPTION_FIVE = 5;
 	public static final int OPTION_SIX = 6;
 	
-	public double numberSaves=0,action,firstNumber , secondNum,sum,result,memory1=0,memory2=0,memory3=0,memory4=0;
+	/*List of variables
+	  
+	 
+       	 action = the option the user chose to do in the calculator
+	planetSaves = the number of planet the user save
+	numberSaves = the number of results from the calculator the user save
+	firstNumber = the first number the user enter to the calculator function
+	  secondNum = the second number the user enter to the calculator function
+		 result = the results from the function after the math
+		memory1 = the user can use this box for save the result from the calculator
+		memory2 = the user can use this box for save the result from the calculator
+		memory3 = the user can use this box for save the result from the calculator
+		memory4 = the user can use this box for save the result from the calculator
+*/
 	
+	public double numberSaves=0,action,firstNumber , secondNum,result,memory1=0,memory2=0,memory3=0,memory4=0;
+	
+	/*Departments*/
 	Scanner scan=new Scanner(System.in);
+	
+	/*functions to get the result that the user save
+	 *  in memory1/memory2/memory3/memory4*/
 	
 	public double getMemory1(){
 		
@@ -34,6 +55,8 @@ public class Calculator {
 		return 	memory4;
 		}
 		
+	/*function for the syso print of the action calculator*/
+	
 	public void calculatorPrintAction(){
 		System.out.println("\n------------------------------");
 		System.out.println("PLEASE CHOOSE ACTION:");
@@ -45,6 +68,7 @@ public class Calculator {
 		
 
 	}
+	/*function for the syso print of the save result calculator*/
 	
 	public void calculatorPrintSave(){
 		System.out.println();
@@ -55,6 +79,9 @@ public class Calculator {
 		System.out.println("Press 3 - Save in memory 3");
 		System.out.println("Press 4 - Save in memory 4");
 	}
+	
+	
+	/*function that gets the result that user save and return if the user save result*/
 	
 	public double calculatorSave(double mathResult){
 		result=mathResult;
