@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Planet {
+public class planet {
 	
 	public static final int OPTION_QUIT = 0;
 	public static final int OPTION_ONE = 1;
