@@ -48,15 +48,23 @@ public class planet {
 //	planetName3 = this var get from the user the name of is planet											//
 //	planetName4 = this var get from the user the name of is planet											//
 //																											//
-///////////////////////////////////////////////////////////////////////////////////////////////////////////	
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	
 	public double action, planetWeight , planetDistance,planetMemory1=0,planetMemory2=0,planetMemory3=0,planetMemory4=0;
 	public double planetSpace1w=0,planetSpace1d=0,planetSpace2w=0,planetSpace2d=0,planetSpace3w=0,planetSpace3d=0,planetSpace4w=0,planetSpace4d=0,planetSaves=0;
 	String planetName1,planetName2,planetName3,planetName4;
 	
 	
 	Scanner scan=new Scanner(System.in);
-	
-	
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////	
+//																									//
+//	function crarePlanet																			//
+//	this function get the saved results from the calculator save function							//
+//	the save result move from the calculator class to the main clas and go to planet class			//
+//	to here																							//
+//																									//
+//////////////////////////////////////////////////////////////////////////////////////////////////////
 	
 	public double cratePlanet(double planetMemory1,double planetMemory2,double planetMemory3,double planetMemory4){
 		this.planetMemory1=planetMemory1;
@@ -112,7 +120,15 @@ public class planet {
 		return planetSaves;
 		
 	}
-
+	
+//////////////////////////////////////////////////////////////////////////
+//																		//
+//	planet save function												//
+//	this function saves the planets the user crate and get the name		//
+//	into a string var;													//
+//																		//
+//////////////////////////////////////////////////////////////////////////
+	
     public double planetSave(){
     	
     	System.out.println();
@@ -166,6 +182,12 @@ public class planet {
 		return planetSaves++;
     }
     
+//////////////////////////////////////////////////////////////////////
+//    																//
+//    function the galaxsy											//
+//    this function only print to the user the planet he saved		//
+//																	//
+//////////////////////////////////////////////////////////////////////    
     public double theGalaxsy(){
     	
     	System.out.println("\n\n\t WELCOME TO YOUR GALAXSY:\n");
