@@ -4,9 +4,9 @@ public class planet {
 	
 	//////////////////////////////////////////////////
 	//												//
-	//	This class create objects,					//
-	//	the class contains functions				//	
-	//	Some did not return a value, and some do	//
+	//	  This class create objects,				//
+	//	  the class contains functions				//	
+	//	  Some did not return a value, and some do	//
 	//												//
 	//////////////////////////////////////////////////
 	
