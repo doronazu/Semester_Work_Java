@@ -46,6 +46,7 @@ public class Calculator {
 
 	
 	public double numberSaves=0,action,firstNumber , secondNum,result,memory1=0,memory2=0,memory3=0,memory4=0;
+	public double memoryfull1=0,memoryfull2=0,memoryfull3=0,memoryfull4=0;
 	
 	/*Departments*/
 	Scanner scan=new Scanner(System.in);
@@ -97,13 +98,29 @@ public class Calculator {
 	//////////////////////////////////////////////////////////////////
 	
 	public void calculatorPrintSave(){
-		System.out.println();
-		System.out.println("Do you want to save the result in memory?");
+		System.out.println("\n*******************************************");
+		System.out.println("Do you want to save the result in memory?\n");
 		System.out.println("Press 0 - Don't Save");
-		System.out.println("Press 1 - Save in memory 1");
-		System.out.println("Press 2 - Save in memory 2");
-		System.out.println("Press 3 - Save in memory 3");
-		System.out.println("Press 4 - Save in memory 4");
+		
+		if(memoryfull1==1)
+			System.out.println("Press 1 - memory 1 is full ["+memory1+"] but save it anyway!");
+		else
+			System.out.println("Press 1 - Save in memory 1 is Empty.");
+		
+		if(memoryfull2==1)
+			System.out.println("Press 2 - memory 2 is full ["+memory2+"] but save it anyway!");
+		else
+			System.out.println("Press 2 - Save in memory 2 is Empty.");
+		
+		if(memoryfull3==1)
+			System.out.println("Press 3 - memory 3 is full ["+memory3+"] but save it anyway!");
+		else
+			System.out.println("Press 3 - Save in memory 3 is Empty.");
+		
+		if(memoryfull4==1)
+			System.out.println("Press 4 - memory 4 is full ["+memory4+"] but save it anyway!");
+		else
+			System.out.println("Press 4 - Save in memory 4 is Empty.");
 	}
 	
 	 //////////////////////////////////////////////////////////////////////////////////////////////
@@ -125,24 +142,28 @@ public class Calculator {
 		
 		if(action==OPTION_ONE){
 			memory1=result;
+			memoryfull1=1;
 			numberSaves++;
 			System.out.println("Your Result saved in Memory 1.");
 		}
 			
 		if(action==OPTION_TWO){
 			memory2=result;
+			memoryfull2=1;
 			numberSaves++;
 			System.out.println("Your Result saved in Memory 2.");
 		}
 			
 		if(action==OPTION_TREE){
 			memory3=result;
+			memoryfull3=1;
 			numberSaves++;
 			System.out.println("Your Result saved in Memory 3.");
 		}
 			
 		if(action==OPTION_FOUR){
 			memory4=result;
+			memoryfull4=1;
 			numberSaves++;
 			System.out.println("Your Result saved in Memory 4.");
 		}
