@@ -47,6 +47,7 @@ public class planet {
 //	planetName2 = this var get from the user the name of is planet											//
 //	planetName3 = this var get from the user the name of is planet											//
 //	planetName4 = this var get from the user the name of is planet											//
+//	destroy = destroy the saved planet																		//
 //																											//
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	

@@ -42,12 +42,13 @@ public class Calculator {
 	//*			memory2 = the user can use this box for save the result from the calculator		//
 	//*			memory3 = the user can use this box for save the result from the calculator		//
 	//*			memory4 = the user can use this box for save the result from the calculator 	//
+	//*			destroy = destroy the saved result												//
 	//*/////////////////////////////////////////////////////////////////////////////////////////// 
 
 	
 	public double numberSaves=0,action,firstNumber , secondNum,result,memory1=0,memory2=0,memory3=0,memory4=0;
 	public double memoryfull1=0,memoryfull2=0,memoryfull3=0,memoryfull4=0;
-	
+	public int destroy;
 	/*Departments*/
 	Scanner scan=new Scanner(System.in);
 	
@@ -141,31 +142,103 @@ public class Calculator {
 		}
 		
 		if(action==OPTION_ONE){
-			memory1=result;
-			memoryfull1=1;
-			numberSaves++;
-			System.out.println("Your Result saved in Memory 1.");
+			if(memoryfull1 == OPTION_ONE){
+				System.out.println("Do you want to  to DELEATE "+memory1+"?\n");
+				System.out.println("       Press 1 - YES\n");
+				System.out.println("       Press 2 - NO");
+				destroy=scan.nextInt();
+				if(destroy==OPTION_TWO)
+					calculatorSave(result);
+				else{
+					
+					memory1=result;
+					memoryfull1=1;
+					numberSaves++;
+					System.out.println("Your Result saved in Memory 1.");
+				}
+			}
+			else{
+				memory1=result;
+				memoryfull1=1;
+				numberSaves++;
+				System.out.println("Your Result saved in Memory 1.");
+			}
+
 		}
 			
 		if(action==OPTION_TWO){
-			memory2=result;
-			memoryfull2=1;
-			numberSaves++;
-			System.out.println("Your Result saved in Memory 2.");
+			if(memoryfull2 == OPTION_ONE){
+				System.out.println("Do you want to  to DELEATE "+memory2+"?\n");
+				System.out.println("       Press 1 - YES\n");
+				System.out.println("       Press 2 - NO");
+				destroy=scan.nextInt();
+				if(destroy==OPTION_TWO)
+					calculatorSave(result);
+				else{
+					
+					memory2=result;
+					memoryfull2=1;
+					numberSaves++;
+					System.out.println("Your Result saved in Memory 2.");
+				}
+			}
+			else{
+				memory2=result;
+				memoryfull2=1;
+				numberSaves++;
+				System.out.println("Your Result saved in Memory 2.");
+			}
+
 		}
 			
 		if(action==OPTION_TREE){
-			memory3=result;
-			memoryfull3=1;
-			numberSaves++;
-			System.out.println("Your Result saved in Memory 3.");
+			if(memoryfull3 == OPTION_ONE){
+				System.out.println("Do you want to  to DELEATE "+memory3+"?\n");
+				System.out.println("       Press 1 - YES\n");
+				System.out.println("       Press 2 - NO");
+				destroy=scan.nextInt();
+				if(destroy==OPTION_TWO)
+					calculatorSave(result);
+				else{
+					
+					memory3=result;
+					memoryfull3=1;
+					numberSaves++;
+					System.out.println("Your Result saved in Memory 3.");
+				}
+			}
+			else{
+				memory3=result;
+				memoryfull3=1;
+				numberSaves++;
+				System.out.println("Your Result saved in Memory 3.");
+			}
+
 		}
 			
 		if(action==OPTION_FOUR){
-			memory4=result;
-			memoryfull4=1;
-			numberSaves++;
-			System.out.println("Your Result saved in Memory 4.");
+			if(memoryfull4 == OPTION_ONE){
+				System.out.println("Do you want to  to DELEATE "+memory4+"?\n");
+				System.out.println("       Press 1 - YES\n");
+				System.out.println("       Press 2 - NO");
+				destroy=scan.nextInt();
+				if(destroy==OPTION_TWO)
+					calculatorSave(result);
+				else{
+					
+					memory4=result;
+					memoryfull4=1;
+					numberSaves++;
+					System.out.println("Your Result saved in Memory 4.");
+				}
+			}
+			else{
+				memory4=result;
+				memoryfull4=1;
+				numberSaves++;
+				System.out.println("Your Result saved in Memory 4.");
+			}
+
 		}
 		return numberSaves;
 	}
