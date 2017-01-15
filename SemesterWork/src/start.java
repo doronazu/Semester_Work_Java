@@ -117,7 +117,9 @@ public class start {
 		
 		if(action==OPTION_SEVEN)
 			action=p.theGalaxsy();
-			
+		
+		if(action==OPTION_QUIT)
+			System.out.println("\n       {:-=bye_bye=-:}");
 		
 	}
 

@@ -174,7 +174,7 @@ public class planet {
 		if(action==OPTION_ONE){
 			
 			if(spacefull1==OPTION_ONE){
-				System.out.println("Do you want to  to DESTROY "+planetName1+"?\n");
+				System.out.println("Do you want to  to DESTROY "+planetName1+" Planet?\n");
 				System.out.println("       Press 1 - YES\n");
 				System.out.println("       Press 2 - NO");
 				destroy=scan.nextInt();
@@ -186,7 +186,7 @@ public class planet {
 					planetName1=scan.next();
 					planetSpace1w=planetWeight;
 					planetSpace1d=planetDistance;
-					System.out.println("Your Planet "+planetName1+" Save is Galexsy Space 1");
+					System.out.println("\n Your Planet "+planetName1+" Saved in 'Galexsy Space 1'");
 					spacefull1=OPTION_ONE;
 					planetSaves++;
 				}
@@ -196,7 +196,7 @@ public class planet {
 				planetName1=scan.next();
 				planetSpace1w=planetWeight;
 				planetSpace1d=planetDistance;
-				System.out.println("Your Planet "+planetName1+" Save is Galexsy Space 1");
+				System.out.println("\n Your Planet "+planetName1+" Saved in 'Galexsy Space 1'");
 				spacefull1=OPTION_ONE;
 				planetSaves++;
 			}
@@ -207,7 +207,7 @@ public class planet {
 		if(action==OPTION_TWO){
 			
 			if(spacefull2==OPTION_ONE){
-				System.out.println("Do you want to  to DESTROY "+planetName2+"?\n");
+				System.out.println("Do you want to  to DESTROY "+planetName2+" Planet?\n");
 				System.out.println("       Press 1 - YES\n");
 				System.out.println("       Press 2 - NO");
 				destroy=scan.nextInt();
@@ -219,7 +219,7 @@ public class planet {
 					planetName2=scan.next();
 					planetSpace2w=planetWeight;
 					planetSpace2d=planetDistance;
-					System.out.println("Your Planet "+planetName2+" Save is Galexsy Space 2");
+					System.out.println("\n Your Planet "+planetName2+" Saved in 'Galexsy Space 2'");
 					spacefull2=OPTION_ONE;
 					planetSaves++;
 
@@ -230,7 +230,7 @@ public class planet {
 				planetName2=scan.next();
 				planetSpace2w=planetWeight;
 				planetSpace2d=planetDistance;
-				System.out.println("Your Planet "+planetName2+" Save is Galexsy Space 2");
+				System.out.println("\n Your Planet "+planetName2+" Saved in 'Galexsy Space 2'");
 				spacefull2=OPTION_ONE;
 				planetSaves++;
 			}
@@ -240,7 +240,7 @@ public class planet {
 		if(action==OPTION_TREE){
 			
 			if(spacefull3==OPTION_ONE){
-				System.out.println("Do you want to  to DESTROY "+planetName3+"?\n");
+				System.out.println("Do you want to  to DESTROY "+planetName3+" Planet?\n");
 				System.out.println("       Press 1 - YES\n");
 				System.out.println("       Press 2 - NO");
 				destroy=scan.nextInt();
@@ -252,7 +252,7 @@ public class planet {
 					planetName3=scan.next();
 					planetSpace3w=planetWeight;
 					planetSpace3d=planetDistance;
-					System.out.println("Your Planet "+planetName3+" Save is Galexsy Space 3");
+					System.out.println("\n Your Planet "+planetName3+" Saved in 'Galexsy Space 3'");
 					spacefull3=OPTION_ONE;
 					planetSaves++;
 
@@ -263,7 +263,7 @@ public class planet {
 				planetName3=scan.next();
 				planetSpace3w=planetWeight;
 				planetSpace3d=planetDistance;
-				System.out.println("Your Planet "+planetName3+" Save is Galexsy Space 3");
+				System.out.println("\n Your Planet "+planetName3+" Saved in 'Galexsy Space 3'");
 				spacefull3=OPTION_ONE;
 				planetSaves++;
 
@@ -273,7 +273,7 @@ public class planet {
 		if(action==OPTION_FOUR){
 			
 			if(spacefull4==OPTION_ONE){
-				System.out.println("Do you want to  to DESTROY "+planetName4+"?\n");
+				System.out.println("Do you want to  to DESTROY "+planetName4+" Planet?\n");
 				System.out.println("       Press 1 - YES\n");
 				System.out.println("       Press 2 - NO");
 				destroy=scan.nextInt();
@@ -285,7 +285,7 @@ public class planet {
 					planetName4=scan.next();
 					planetSpace4w=planetWeight;
 					planetSpace4d=planetDistance;
-					System.out.println("Your Planet "+planetName4+" Save is Galexsy Space 4");
+					System.out.println("\n Your Planet "+planetName4+" Saved in 'Galexsy Space 4'");
 					spacefull4=OPTION_ONE;
 					planetSaves++;
 				}
@@ -295,7 +295,7 @@ public class planet {
 				planetName4=scan.next();
 				planetSpace4w=planetWeight;
 				planetSpace4d=planetDistance;
-				System.out.println("Your Planet "+planetName4+" Save is Galexsy Space 4");
+				System.out.println("\n Your Planet "+planetName4+" Saved in 'Galexsy Space 4'");
 				spacefull4=OPTION_ONE;
 				planetSaves++;
 			}
